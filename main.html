@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Styling</title>
+    <style>
+        /*
+         * REQUIRED CSS: Apply flexbox properties to the .holder element
+         */
+        .holder {
+            display: flex;
+            justify-content: space-around; /* Makes items evenly placed in the row */
+            flex-wrap: wrap;             /* Prevents squashing and moves extra items to the next row */
 
+            /* Optional: Styling for visibility, feel free to remove */
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Optional: Styling for the items */
+        .item {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 <body>
-<div class="holder">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="holder">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6 (Wraps)</div>
+        <div class="item">Item 7 (Wraps)</div>
+    </div>
 
 </body>
-
 </html>
